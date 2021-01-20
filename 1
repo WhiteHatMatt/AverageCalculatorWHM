@@ -1,0 +1,59 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package averagecalculator;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Matthew
+ */
+public class AverageCalculator {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+
+    double num1, num2, num3, avg;
+
+  
+
+    Scanner sc = new Scanner(System.in);
+
+    //asks users for numbers
+
+    System.out.print("Enter first number: ");
+
+    num1 = sc.nextDouble();
+
+    System.out.print("Enter second number: ");
+
+    num2 = sc.nextDouble();
+
+    System.out.print("Enter third number: ");
+
+    num3 = sc.nextDouble();
+
+    //Calculates average
+
+    avg = (num1 + num2 + num3) / 3;
+
+    //Display the average of these three numbers.
+
+    System.out.println("The average of the three numbers entered: "
+
+    + String.format("%.2f", num1) + ", "
+
+    + String.format("%.2f", num2) + ", and "
+
+    + String.format("%.2f", num3) + " are "
+
+    + String.format("%.2f", avg) + ".");
+    }
+    
+}
